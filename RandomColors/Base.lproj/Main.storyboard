@@ -16,25 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8R2-Uj-dgj">
-                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xDP-Hr-qQR">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
-                                    <action selector="tempButtonTapped:" destination="5mE-K4-SKb" eventType="touchUpInside" id="dh0-VG-ips"/>
+                                    <outlet property="dataSource" destination="5mE-K4-SKb" id="yQH-GJ-YYG"/>
+                                    <outlet property="delegate" destination="5mE-K4-SKb" id="gKP-We-GcN"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n3C-cX-A7p"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8R2-Uj-dgj" firstAttribute="centerY" secondItem="W79-Pk-uoi" secondAttribute="centerY" id="XgL-pd-n2L"/>
-                            <constraint firstItem="8R2-Uj-dgj" firstAttribute="centerX" secondItem="W79-Pk-uoi" secondAttribute="centerX" id="uej-H3-Arw"/>
+                            <constraint firstItem="xDP-Hr-qQR" firstAttribute="top" secondItem="W79-Pk-uoi" secondAttribute="top" id="5kK-we-9VS"/>
+                            <constraint firstItem="n3C-cX-A7p" firstAttribute="trailing" secondItem="xDP-Hr-qQR" secondAttribute="trailing" id="xPX-3U-xuT"/>
+                            <constraint firstAttribute="bottom" secondItem="xDP-Hr-qQR" secondAttribute="bottom" id="yre-2M-dCq"/>
+                            <constraint firstItem="xDP-Hr-qQR" firstAttribute="leading" secondItem="n3C-cX-A7p" secondAttribute="leading" id="z6s-hj-wfn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Colors" id="mPU-Z7-36F"/>
                     <connections>
-                        <segue destination="DIr-Hq-bme" kind="show" identifier="toColorsDetailVC" id="gQk-g3-D3p"/>
+                        <segue destination="DIr-Hq-bme" kind="show" identifier="toColorDetailVC" id="gQk-g3-D3p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHV-DC-aiu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -46,8 +48,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NsP-og-QtL" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="teH-L1-mhF">
-                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="teH-L1-mhF">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -79,9 +81,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
