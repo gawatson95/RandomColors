@@ -19,6 +19,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xDP-Hr-qQR">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ColorCell" id="jRz-L4-H4J">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jRz-L4-H4J" id="omn-rH-7Bd">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="5mE-K4-SKb" id="yQH-GJ-YYG"/>
                                     <outlet property="delegate" destination="5mE-K4-SKb" id="gKP-We-GcN"/>
@@ -29,8 +39,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xDP-Hr-qQR" firstAttribute="top" secondItem="W79-Pk-uoi" secondAttribute="top" id="5kK-we-9VS"/>
+                            <constraint firstAttribute="bottom" secondItem="xDP-Hr-qQR" secondAttribute="bottom" id="fnk-iJ-mGE"/>
                             <constraint firstItem="n3C-cX-A7p" firstAttribute="trailing" secondItem="xDP-Hr-qQR" secondAttribute="trailing" id="xPX-3U-xuT"/>
-                            <constraint firstAttribute="bottom" secondItem="xDP-Hr-qQR" secondAttribute="bottom" id="yre-2M-dCq"/>
                             <constraint firstItem="xDP-Hr-qQR" firstAttribute="leading" secondItem="n3C-cX-A7p" secondAttribute="leading" id="z6s-hj-wfn"/>
                         </constraints>
                     </view>
@@ -41,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHV-DC-aiu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="-12"/>
+            <point key="canvasLocation" x="824.61538461538464" y="-12.085308056872037"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7aB-IY-Kge">

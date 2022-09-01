@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C04EF10428C1203600C04E8B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04EF10328C1203600C04E8B /* UIColorExtension.swift */; };
 		C060A9FC28C04B9400F7796D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C060A9FB28C04B9400F7796D /* AppDelegate.swift */; };
 		C060A9FE28C04B9400F7796D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C060A9FD28C04B9400F7796D /* SceneDelegate.swift */; };
 		C060AA0328C04B9400F7796D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C060AA0128C04B9400F7796D /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C04EF10328C1203600C04E8B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		C060A9F828C04B9400F7796D /* RandomColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C060A9FB28C04B9400F7796D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C060A9FD28C04B9400F7796D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				C060AA0428C04B9500F7796D /* Assets.xcassets */,
 				C060AA0628C04B9500F7796D /* LaunchScreen.storyboard */,
 				C060AA0928C04B9500F7796D /* Info.plist */,
+				C04EF10328C1203600C04E8B /* UIColorExtension.swift */,
 			);
 			path = RandomColors;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				C060AA1028C04C0700F7796D /* ColorsTableVC.swift in Sources */,
 				C060AA1228C04D4500F7796D /* ColorDetailVC.swift in Sources */,
+				C04EF10428C1203600C04E8B /* UIColorExtension.swift in Sources */,
 				C060A9FC28C04B9400F7796D /* AppDelegate.swift in Sources */,
 				C060A9FE28C04B9400F7796D /* SceneDelegate.swift in Sources */,
 			);
